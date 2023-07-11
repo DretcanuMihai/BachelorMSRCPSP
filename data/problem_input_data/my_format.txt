@@ -1,0 +1,18 @@
+Line 2:
+->Nr. Activities (NA)
+->Nr. Resources (NR)
+->Nr. Skills Types (NS)
+
+Line 4:
+-> Deadline - is the time of the best solution found by CPLEX
+
+Line 7 to NA+6:
+-> Activity Duration
+-> Number of Activity Successors (NAS)
+-> Succesor1 Succesor2 ... SuccesorNAS
+
+Line NA+8 to NA+8+NR:
+-> It contains NS values of 0 and 1 - if the i-th value is 1, it means that the current resource masters it
+
+Line NA+NR+10 to NA+NR+10+NA:
+-> It contains NS integer values - if the i-th value is v, then the current activity needs v units of skill i to be completed
